@@ -1,0 +1,445 @@
+/*to swap out the banner image or testimonial images, upload an image to Cloudinary, scale to fit, and past in the url below*/
+.banner {
+  width: 100%;
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/v1477412156/o-COUPLE-LOVE-TALKING-facebook_s05xxd.jpg) bottom / auto 100% no-repeat;
+  background-size: cover;
+  border-bottom: solid 5em rgb(250, 250, 250);
+}
+
+#left-testimonial {
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+#right-testimonial {
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_509/v1476925579/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: inherit;
+  font-family: 'Hind', sans-serif;
+  height: 100%;
+  position: relative;
+}
+
+main {
+  background-color: #fffffe;
+  margin-top: -20px;
+}
+
+@media (min-width: 350px) {
+  #modal {
+    width: 95%;
+    left: 3%;
+  }
+}
+
+@media (min-width: 400px) {
+  .slider-for {
+    width: 380px;
+  }
+
+  .slider-nav {
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 732px;
+  }
+
+  #modal {
+    width: 65%;
+    left: 23%;
+  }
+
+  .contact-box, .about-box-container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 992px){
+  .container {
+    width: 956px;
+  }
+
+  #modal {
+    width: 45%;
+    left: 33%;
+  }
+
+  .contact-box, .about-box-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1164px;
+  }
+
+  .contact-box, .about-box-container {
+    width: 900px;
+  }
+}
+
+
+.navbar-header {
+  background-color: white;
+}
+
+#example-navbar-collapse {
+  background-color: white;
+}
+
+#cover {
+  position: absolute;
+  min-width: 100%;
+  min-height: 2950px;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+  display: none;
+  margin-top: -25px;
+}
+
+#modal {
+  position: fixed;
+	background-color: #fffffe;
+	top: 20%;
+  height: auto;
+  z-index: 2;
+  display: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.success-message {
+  font-weight: 400;
+  text-align: center;
+  margin: 80px auto 100px auto;
+}
+
+.error-message {
+  margin-bottom: 0px;
+}
+
+.form-field {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.inner-modal {
+	padding: 10%;
+}
+
+.submit {
+	margin-left: 46%;
+	width: 54%;
+	border-radius: 2px;
+	margin-top: 7%;
+	background-color: dodgerblue;
+	border: none;
+	color: white;
+	font-size: 16px;
+  padding: 2%;
+}
+
+.form-heading {
+	text-align: center;
+  padding-bottom: 5%;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+input {
+  width: 50.5%;
+  padding-left: 2%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.banner-top {
+  font-size: 56px;
+  margin-right: 40%;
+  line-height: 59px;
+  font-weight: 300;
+}
+
+.banner-bottom {
+  margin: 10% 0px 0px 0px;
+  padding: 6% 0px;
+  color: white;
+}
+
+.edit, .follow {
+  width: 500px;
+  height: 48px;
+  text-align: left;
+  font-size: 20px;
+  background-color: white;
+  color: rgb(43, 168, 222);
+  border: 0px;
+  padding-left: 18px;
+}
+
+.edit:hover {
+  cursor: pointer;
+}
+
+.follow {
+  position: fixed;
+  border: 1px solid rgb(43, 168, 222);
+  z-index: 100;
+  top: 1px;
+  display: none;
+}
+
+.stat-container, .testimonial-box, .carousel-box {
+  padding-top: 12%;
+}
+
+.promo-box, .banner, .contact-box, .about-box, .about-box-container {
+  padding-top: 8%
+}
+
+.promo-box img {
+  display: block;
+  margin: auto;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-box-container {
+  margin: auto;
+}
+
+.about-box-container {
+  margin-bottom: 5%;
+}
+
+.about-logo {
+  margin: auto;
+  display: block;
+}
+
+.about-heading {
+  margin-left: 35%;
+}
+
+.about-box div {
+  max-width: 60%;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+.slider-for {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.slider-nav {
+	margin: 30px auto;
+}
+
+.slider-nav img {
+  width: 100px;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  width:auto;
+  height: auto;
+}
+
+.inner-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+
+.inner-container h2, .inner-container h4 {
+  text-align: center;
+}
+
+.inner-container h2, .testimonial-headline {
+  font-weight: 300;
+  font-size: 1.875em;
+  color: rgb(89, 89, 89);
+}
+
+.inner-container h4, .card {
+  color: rgb(112, 134, 143);
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  padding: 6px;
+  width: 48%;
+}
+
+.card {
+  padding: 6px;
+  border: solid 1px rgb(216, 228, 227);
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  padding: 35px 60px;
+}
+
+.testimonial-headline {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.middle-row-center, .footer, .footer-index {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer, .footer-index {
+  justify-content: center;
+  padding: 8% 0px 1% 0px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 40.5%
+}
+
+.footer a, .footer-index a {
+  padding: 0px 15px;
+}
+
+@media (min-width: 320px) {
+  .slider-for {
+    width: 98%;
+  }
+
+  .slider-nav {
+    width: 96%;
+  }
+
+
+  footer a, .logo {
+    text-align: center;
+  }
+}
+
+@media (min-width: 500px) {
+  .slider-for {
+    width: 480px;
+  }
+
+  .slider-nav {
+    width: 450px;
+  }
+}
+
+@media (min-width: 600px) {
+  .slider-for {
+    width: 580px;
+  }
+
+  .slider-nav {
+    width: 550px;
+  }
+}
+
+@media (min-width: 700px) {
+  .slider-for {
+    width: 680px;
+  }
+}
+
+@media (min-width: 800px) {
+  .slider-for {
+    width: 780px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-box div {
+    max-width: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .middle-row-center {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 95%;
+  }
+}
+
+@media (max-width: 550px) {
+  .edit, .follow {
+    width: 95%;
+  }
+
+  .follow {
+    width: 87%;
+    right: 9%;
+  }
+}
