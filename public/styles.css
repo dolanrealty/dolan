@@ -34,7 +34,7 @@ main {
   margin-top: -20px;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 319px) {
   #modal {
     width: 95%;
     left: 3%;
