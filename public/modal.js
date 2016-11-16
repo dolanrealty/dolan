@@ -21,9 +21,10 @@ $(document).ready(() => {
 });
 
 function enableBtn (res) {
-  document.getElementById("button").disabled = false;
-  console.log(res)
-  $('#button').css('background-color', 'dodgerblue');
+  if (res) {
+    document.getElementById("button").disabled = false;
+    $('#button').css('background-color', 'dodgerblue');
+  }
 }
 
 const errorMessage = `<h4 class="error-message">There was an error fulfilling your request. Please ensure you've entered a vaild email address and try again</h4>`;
