@@ -20,9 +20,9 @@ $(document).ready(() => {
   document.getElementById("button").disabled = true;
 });
 
-function enableBtn () {
+function enableBtn (res) {
   document.getElementById("button").disabled = false;
-  console.log("callback called")
+  console.log(res)
   $('#button').css('background-color', 'dodgerblue');
 }
 
