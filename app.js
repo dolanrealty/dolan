@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'dolanrealtyca@gmail.com, matthew.bramfeld@gmail.com',
+    user: 'dolanrealtyca@gmail.com',
     pass: process.env.PASSWORD,
   },
 });
@@ -26,7 +26,7 @@ function handleAgentRequest(req, res) {
 
   const mailOptions = {
     from: 'dolanrealtyca@gmail.com',
-    to: `${req.body.email}`,
+    to: `${req.body.email}, matthew.bramfeld@gmail.com`,
     subject: 'Confirmation from Dolan Realty',
     text,
   };

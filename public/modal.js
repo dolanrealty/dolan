@@ -38,8 +38,7 @@ $('.submit').click((event) => {
     url: '/',
     dataType: 'json',
     data: $('#agent-request').formSerialize(),
-    complete: (res) => {
-      console.log($('#agent-request').formSerialize())
+    complete: (res) => {)
       if (res.responseJSON.yo === 'error') {
         $('.inner-modal').append(errorMessage);
       } else {
