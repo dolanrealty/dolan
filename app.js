@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-// const transporter = require('./transporter');
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
@@ -10,7 +9,7 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'dolanrealtyca@gmail.com',
+    user: 'dolanrealtyca@gmail.com, matthew.bramfeld@gmail.com',
     pass: process.env.PASSWORD,
   },
 });
