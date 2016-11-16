@@ -121,6 +121,10 @@ main {
 	box-shadow: 5px 5px 10px #888888;
 }
 
+.g-recaptcha {
+  margin-top: 10px;
+}
+
 .success-message {
   font-weight: 400;
   text-align: center;
