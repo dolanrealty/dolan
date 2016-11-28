@@ -20,7 +20,7 @@ http://res.cloudinary.com/dtwgk5mnq/image/upload/v1480364337/2016080731-PJ-House
 
 The url you need to put into the code has a tiny difference. It'll look like this:
 ```
-http://res.cloudinary.com/dtwgk5mnq/image/upload/c_scale,w_780/v1480364337/Varassaari5_pw4gpa_gossol.jpg
+http://res.cloudinary.com/dtwgk5mnq/image/upload/c_scale,w_780/v1480364337/2016080731-PJ-Houses-1800-Holly-Kellum-1906_nq9qkm_b6xgkv.jpg
 ```
 
 After 'image/upload/' the url reads `c_scale,w_780`. Cloudinary uses this to scale your image for you. It may say '780' or '150' depending on the image you're trying to replace. Copy and paste this bit from the image you're replacing and put it into the url you get from Cloudinary. Also, either choose images that have the same or similar dimensions as the ones already on the site, or use Cloudinary's image editing tools to cut them to size.
