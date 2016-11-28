@@ -27,7 +27,7 @@ After 'image/upload/' the url reads `c_scale,w_780`. Cloudinary uses this to sca
 
 #Editing the text of the auto-mailer
 
-Do this in /public/app.js. The current text of the email is on lines 18-25. Currently, it begins
+Do this in ./app.js. The current text of the email is on lines 18-25. Currently, it begins
 ```javascript
 Dear ${req.body.fname} ${req.body.lname}
 ```
