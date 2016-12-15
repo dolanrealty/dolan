@@ -330,7 +330,7 @@ li {
 
 .col {
   padding: 6px;
-  width: 48%;
+  width: 50%;
 }
 
 .card {
@@ -406,7 +406,7 @@ h4 {
   }
 	
   .nav-container {
-    width: 80%;
+    width: 86%;
     margin: auto;
   }
 
