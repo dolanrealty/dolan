@@ -7,9 +7,9 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
-  service: 'Gmail',
+  service: 'Mailgun',
   auth: {
-    user: 'dolanrealtyca@gmail.com',
+    user: 'sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
     pass: process.env.PASSWORD,
   },
 });
@@ -25,7 +25,7 @@ function handleAgentRequest(req, res) {
   `;
 
   const mailOptions = {
-    from: 'dolanrealtyca@gmail.com',
+    from: 'sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
     to: `${req.body.email}`,
     subject: 'Confirmation from Dolan Realty',
     text,
