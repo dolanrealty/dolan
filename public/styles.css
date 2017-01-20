@@ -338,6 +338,7 @@ li {
 #we-buy-any {
   background: url("./WeBuyAnyIcon.png") no-repeat;
   background-size: contain;
+  margin-top: 35px;
 }
 
 #no-open-houses {
