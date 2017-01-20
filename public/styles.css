@@ -24,7 +24,6 @@ html {
 
 body {
   margin: inherit;
-  font-family: 'Hind', sans-serif;
   height: 100%;
   position: relative;
 }
@@ -32,6 +31,33 @@ body {
 main {
   background-color: #fffffe;
   margin-top: -20px;
+  min-height: 90vh;
+}
+
+h1, h2, h3, div {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+h2, h3 {
+  color: #00a8e1;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+p, h4, a {
+  font-size: 1.3em;
+  font-family: Arial;
+}
+
+p a, li a {
+  font-size: 1em;
+}
+
+#header-links {
+  font-size: 18px;
 }
 
 @media (min-width: 319px) {
@@ -61,9 +87,6 @@ main {
     left: 23%;
   }
 
-  .contact-box, .about-box-container {
-    width: 600px;
-  }
 }
 
 @media (min-width: 992px){
@@ -75,19 +98,11 @@ main {
     width: 45%;
     left: 33%;
   }
-
-  .contact-box, .about-box-container {
-    width: 750px;
-  }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1164px;
-  }
-
-  .contact-box, .about-box-container {
-    width: 900px;
   }
 }
 
@@ -249,7 +264,17 @@ li {
   margin: auto;
 }
 
+.about-banner {
+  background: url("./AboutTopPicture.png");
+  background-size: cover;
+  height: 400px;
+  transform: scaleX(1.1);
+}
+
 .about-box {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,10 +396,14 @@ h4 {
   padding: 8% 0px 1% 0px;
 }
 
+footer {
+  position: relative;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
-  left: 40.5%
+  left: calc(50vw - 154px);
 }
 
 .footer a, .footer-index a {
@@ -404,7 +433,7 @@ h4 {
   .slider-nav {
     width: 450px;
   }
-	
+
   .nav-container {
     width: 85%;
     margin: auto;
