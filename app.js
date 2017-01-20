@@ -26,7 +26,7 @@ function handleAgentRequest(req, res) {
 
   const mailOptions = {
     from: 'dolanrealtyca@gmail.com',
-    to: `${req.body.email}, sell@webuybayarea.net`,
+    to: `${req.body.email}`,
     subject: 'Confirmation from Dolan Realty',
     text,
   };
