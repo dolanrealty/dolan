@@ -24,7 +24,6 @@ html {
 
 body {
   margin: inherit;
-  font-family: 'Hind', sans-serif;
   height: 100%;
   position: relative;
 }
@@ -32,12 +31,54 @@ body {
 main {
   background-color: #fffffe;
   margin-top: -20px;
+  min-height: 90vh;
+}
+
+h1, h2, h3, div {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+h2, h3 {
+  color: #00a8e1;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p, h4, a {
+  font-size: 1.3em;
+  font-family: Arial;
+}
+
+p a, li a {
+  font-size: 1em;
+}
+
+#header-links {
+  font-size: 18px;
 }
 
 @media (min-width: 319px) {
   #modal {
     width: 95%;
     left: 3%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 10% 0;
+  }
+
+  .value-card {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -48,6 +89,10 @@ main {
 
   .slider-nav {
     width: 350px;
+  }
+
+  .value-card {
+    width: 75%;
   }
 }
 
@@ -61,9 +106,17 @@ main {
     left: 23%;
   }
 
-  .contact-box, .about-box-container {
-    width: 600px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10% 3% 10% 3%;
   }
+
+  .value-card {
+    width: 33%;
+  }
+
 }
 
 @media (min-width: 992px){
@@ -75,19 +128,11 @@ main {
     width: 45%;
     left: 33%;
   }
-
-  .contact-box, .about-box-container {
-    width: 750px;
-  }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1164px;
-  }
-
-  .contact-box, .about-box-container {
-    width: 900px;
   }
 }
 
@@ -236,20 +281,94 @@ li {
   padding: 2px 6px 3px 6px;
 }
 
-.stat-container, .testimonial-box, .carousel-box {
+.stat-container, .carousel-box {
   padding-top: 12%;
 }
 
-.promo-box, .banner, .contact-box, .about-box, .about-box-container {
+.promo-box {
+  padding-top: 4%;
+}
+
+.banner, .contact-box, .about-box, .about-box-container {
   padding-top: 8%
 }
 
-.promo-box img {
-  display: block;
+.our-value-heading {
+  text-align: center;
+}
+
+.row:last-of-type {
+  justify-content: center;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#referral-card {
+  width: 66%;
+}
+
+.value-card p {
+  font-size: 1em;
+  margin-top: 0;
+  line-height: 2;
+}
+
+.value-image-container {
+  width: 30%;
+  margin: 0 auto 0 auto;
+  min-height: 135px;
+}
+
+#no-commission {
+  background: url("./NoCommissionsIcon.png") no-repeat;
+  background-size: contain;
+  margin-top: 22px;
+}
+
+#quick-close {
+  background: url("./QuickCLoseIcon.png") no-repeat;
+  background-size: contain;
+}
+
+#we-buy-any {
+  background: url("./WeBuyAnyIcon.png") no-repeat;
+  background-size: contain;
+}
+
+#no-open-houses {
+  background: url("./NoOpenHousesIcon.png") no-repeat;
+  background-size: contain;
+  width: 60%;
+}
+
+#cash-in {
+  background: url("./ReferralProgramIcon.png") no-repeat;
+  background-size: contain;
+  height: 20vw;
+  width: 65%;
+}
+
+.value-image-container img {
+  width: 100%;
   margin: auto;
 }
 
+.about-banner {
+  background: url("./AboutTopPicture.png");
+  background-size: cover;
+  height: 400px;
+  transform: scaleX(1.1);
+}
+
 .about-box {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,10 +490,14 @@ h4 {
   padding: 8% 0px 1% 0px;
 }
 
+footer {
+  position: relative;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
-  left: 40.5%
+  left: calc(50vw - 154px);
 }
 
 .footer a, .footer-index a {
@@ -404,7 +527,7 @@ h4 {
   .slider-nav {
     width: 450px;
   }
-	
+
   .nav-container {
     width: 85%;
     margin: auto;
