@@ -44,7 +44,11 @@ h2, h3 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.6em;
 }
 
 p, h4, a {
@@ -65,6 +69,17 @@ p a, li a {
     width: 95%;
     left: 3%;
   }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 10% 0;
+  }
+
+  .value-card {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 400px) {
@@ -74,6 +89,10 @@ p a, li a {
 
   .slider-nav {
     width: 350px;
+  }
+
+  .value-card {
+    width: 75%;
   }
 }
 
@@ -85,6 +104,17 @@ p a, li a {
   #modal {
     width: 65%;
     left: 23%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10% 3% 10% 3%;
+  }
+
+  .value-card {
+    width: 33%;
   }
 
 }
@@ -251,16 +281,80 @@ li {
   padding: 2px 6px 3px 6px;
 }
 
-.stat-container, .testimonial-box, .carousel-box {
+.stat-container, .carousel-box {
   padding-top: 12%;
 }
 
-.promo-box, .banner, .contact-box, .about-box, .about-box-container {
+.promo-box {
+  padding-top: 4%;
+}
+
+.banner, .contact-box, .about-box, .about-box-container {
   padding-top: 8%
 }
 
-.promo-box img {
-  display: block;
+.our-value-heading {
+  text-align: center;
+}
+
+.row:last-of-type {
+  justify-content: center;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#referral-card {
+  width: 66%;
+}
+
+.value-card p {
+  font-size: 1em;
+  margin-top: 0;
+  line-height: 2;
+}
+
+.value-image-container {
+  width: 30%;
+  margin: 0 auto 0 auto;
+  min-height: 135px;
+}
+
+#no-commission {
+  background: url("./NoCommissionsIcon.png") no-repeat;
+  background-size: contain;
+  margin-top: 22px;
+}
+
+#quick-close {
+  background: url("./QuickCLoseIcon.png") no-repeat;
+  background-size: contain;
+}
+
+#we-buy-any {
+  background: url("./WeBuyAnyIcon.png") no-repeat;
+  background-size: contain;
+}
+
+#no-open-houses {
+  background: url("./NoOpenHousesIcon.png") no-repeat;
+  background-size: contain;
+  width: 60%;
+}
+
+#cash-in {
+  background: url("./ReferralProgramIcon.png") no-repeat;
+  background-size: contain;
+  height: 20vw;
+  width: 65%;
+}
+
+.value-image-container img {
+  width: 100%;
   margin: auto;
 }
 
