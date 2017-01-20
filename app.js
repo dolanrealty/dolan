@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'Mailgun',
   auth: {
-    user: 'sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
+    user: 'postmaster@sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
     pass: process.env.PASSWORD,
   },
 });
