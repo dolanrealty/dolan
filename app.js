@@ -32,6 +32,7 @@ function handleAgentRequest(req, res) {
   };
 
   transporter.sendMail(mailOptions, (error) => {
+    console.log(req.body.email);
     if (error) {
       res.json({ yo: 'error' });
     } else {
