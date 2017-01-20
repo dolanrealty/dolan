@@ -25,7 +25,7 @@ function handleAgentRequest(req, res) {
   `;
 
   const mailOptions = {
-    from: 'sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
+    from: 'postmaster@sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
     to: `matthew.bramfeld@gmail.com`,
     subject: 'Confirmation from Dolan Realty',
     text,
