@@ -360,7 +360,7 @@ li {
 }
 
 .about-banner {
-  background: url("./AboutTopPicture.png");
+  background: url("./AboutTopPicture.jpg");
   background-size: cover;
   height: 400px;
   transform: scaleX(1.1);
