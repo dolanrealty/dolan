@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'Mailgun',
   auth: {
-    user: 'postmaster@sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
+    user: 'postmaster@webuybayarea.net',
     pass: process.env.PASSWORD,
   },
 });
@@ -25,8 +25,8 @@ function handleAgentRequest(req, res) {
   `;
 
   const mailOptions = {
-    from: 'postmaster@sandbox8aa0c4c191d7479b95f47998978d0be3.mailgun.org',
-    to: `matthew.bramfeld@gmail.com`,
+    from: 'webuybayarea',
+    to: `${req.body.email}`,
     subject: 'Confirmation from Dolan Realty',
     text,
   };
