@@ -281,8 +281,13 @@ li {
   padding: 2px 6px 3px 6px;
 }
 
-.stat-container, .carousel-box {
-  padding-top: 12%;
+.carousel-box {
+  padding-top: 8%;
+}
+
+.carousel-box h2 {
+  color: black;
+  text-align: center;
 }
 
 .promo-box {
