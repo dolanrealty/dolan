@@ -21,12 +21,15 @@ function handleAgentRequest(req, res) {
   at ${req.body.street}, ${req.body.city}. An agent will be in touch
   with you at ${req.body.email} soon.
 
-  Dolan Realty
+  Please do not reply to this email. If you have any questions, contact
+  us directly at team@horizonhomes.net.
+
+  We Buy Bay Area
   `;
 
   const mailOptions = {
     from: 'webuybayarea',
-    to: `${req.body.email}`,
+    to: `${req.body.email}, sell@webuybayarea.net`,
     subject: 'Confirmation from Dolan Realty',
     text,
   };
