@@ -286,7 +286,7 @@ li {
 }
 
 .carousel-box h2 {
-  color: black;
+  color: rgb(89, 89, 89);
   text-align: center;
 }
 
@@ -300,6 +300,7 @@ li {
 
 .our-value-heading {
   text-align: center;
+  font-size: 2.5em;
 }
 
 .row:last-of-type {
@@ -437,9 +438,10 @@ li {
   text-align: center;
 }
 
-.inner-container h2, .testimonial-headline {
+.inner-container h2, .testimonial-headline, .carousel-box h3 {
+  font-family: "Raleway";
   font-weight: 300;
-  font-size: 1.875em;
+  text-align: center;
   color: rgb(89, 89, 89);
 }
 
@@ -447,7 +449,7 @@ li {
   color: rgb(112, 134, 143);
 }
 
-.row {
+.testimonial-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +473,6 @@ li {
 
 .testimonial-headline {
   text-align: center;
-  padding-bottom: 3%;
 }
 
 h4 {
@@ -595,7 +596,7 @@ footer {
 }
 
 @media (max-width: 650px) {
-  .row {
+  .testimonial-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
