@@ -258,7 +258,7 @@ li {
 .banner-bottom {
   margin: 10% 0px 0px 0px;
   padding: 6% 0px;
-  color: black;
+  color: rgb(51 51 51);
 }
 
 .edit, .follow {
