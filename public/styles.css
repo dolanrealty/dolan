@@ -141,6 +141,10 @@ p a, li a {
   background-color: white;
 }
 
+.nav a {
+  font-family: "Raleway";
+}
+
 #example-navbar-collapse {
   background-color: white;
 }
