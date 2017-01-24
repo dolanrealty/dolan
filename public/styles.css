@@ -228,6 +228,8 @@ input {
 footer a {
   text-decoration: none;
   color: black;
+  font-family: "Raleway";
+  font-weight: 300;
 }
 
 .logo {
