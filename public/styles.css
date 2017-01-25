@@ -162,7 +162,7 @@ p a, li a {
 #modal {
   position: fixed;
 	background-color: #fffffe;
-	top: 20%;
+	top: 10%;
   height: auto;
   z-index: 2;
   display: none;

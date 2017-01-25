@@ -52,12 +52,11 @@ function handleAgentRequest(req, res) {
     text: agentEmail,
   };
 
-  transporter.sendMail(agentNotification, (error) => {});
-  
   transporter.sendMail(customerConfirmation, (error) => {
     if (error) {
       res.json({ yo: 'error' });
     } else {
+      transporter.sendMail(agentNotification, (error) => {});
       res.json({ yo: 'success' });
     }
   });
