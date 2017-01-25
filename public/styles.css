@@ -39,7 +39,7 @@ h1, h2, h3, div {
   font-weight: 300;
 }
 
-h2, h3 {
+h2, h3, .blue-today {
   color: #00a8e1;
 }
 
@@ -424,6 +424,11 @@ li {
   margin: 0 auto;
 }
 
+.slider-for img {
+  max-width: 98%;
+  height: auto;
+}
+
 .slider-nav {
 	margin: 30px auto;
 }
@@ -602,6 +607,29 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .card-content {
+    padding: 35px 30px;
+    font-size: 1.5em;
+  }
+
+  .value-card p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: rgba(89, 89, 89, 1)
+  }
+
+  #no-commission, #we-buy-any {
+    margin-top: 0px;
+  }
+
+  .header-links {
+    font-size: 1.25em;
+  }
+
+  #right-testimonial {
+    height: 245px;
   }
 }
 
