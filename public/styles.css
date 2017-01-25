@@ -222,6 +222,10 @@ input {
   padding-left: 2%;
 }
 
+input:invalid {
+  color: red;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
