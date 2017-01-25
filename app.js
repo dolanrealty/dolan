@@ -47,7 +47,7 @@ function handleAgentRequest(req, res) {
 
   const agentNotification = {
     from: 'webuybayarea',
-    to: `sell@webuybayarea.net`,
+    to: `matthew.bramfeld@gmail.com`,
     subject: 'Contact Request',
     text: agentEmail,
   };
