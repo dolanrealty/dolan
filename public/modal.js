@@ -42,8 +42,7 @@ $('.submit').click((event) => {
       if (res.responseJSON.yo === 'error') {
         $('.inner-modal').append(errorMessage);
       } else {
-        $('.inner-modal').text("")
-        $('#agent-request').replaceWith(successMessage);
+        $('.inner-modal').html(successMessage)
       }
     },
   });
