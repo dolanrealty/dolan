@@ -7,15 +7,15 @@
 }
 
 #left-testimonial {
-  background: url(http://res.cloudinary.com/dtwgk5mnq/image/upload/c_scale,w_509/v1480364337/family_rhlzh3_r0jl86.jpg) 0 0 no-repeat;
+  background: url(http://res.cloudinary.com/dtwgk5mnq/image/upload/v1481856175/happy-mother-with-baby_yzdtvi.jpg) 0 0 no-repeat;
   background-size: cover;
   height: 270px;
 }
 
 #right-testimonial {
-  background: url(http://res.cloudinary.com/dtwgk5mnq/image/upload/c_scale,w_509/v1480364336/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck_ewg4wa.jpg) 0 0 no-repeat;
+  background: url(http://res.cloudinary.com/dtwgk5mnq/image/upload/v1481856174/Ignore-social-media-etiquette-While-many-grandparents-arent-plugged_psqg0a.jpg) 0 0 no-repeat;
   background-size: cover;
-  height: 270px;
+  height: 290px;
 }
 
 html {
@@ -339,7 +339,7 @@ li {
 #no-commission {
   background: url("./NoCommissionsIcon.png") no-repeat;
   background-size: contain;
-  margin-top: 22px;
+  margin-top: 28px;
 }
 
 #quick-close {
@@ -350,7 +350,7 @@ li {
 #we-buy-any {
   background: url("./WeBuyAnyIcon.png") no-repeat;
   background-size: contain;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 #no-open-houses {

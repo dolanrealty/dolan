@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 });
 
 function handleAgentRequest(req, res) {
-  const text = `
+  const customerEmail = `
   Dear ${req.body.fname} ${req.body.lname},
   \n
   We received your request to speak with an agent regarding the property
@@ -28,12 +28,39 @@ function handleAgentRequest(req, res) {
   We Buy Bay Area
   `;
 
-  const mailOptions = {
+  const agentEmail = `
+  ${req.body.fname} ${req.body.lname} has made a contact request on WeBuyBayArea.net.
+  \n
+  ${req.body.fname} owns a property at ${req.body.street} in ${req.body.city}.
+  \n
+  ${req.body.fname} can be reached at ${req.body.email}
+  \n
+  ${req.body.message === "" ? "" : `${req.body.fname} had this to add: ${req.body.message}`}
+  `
+
+  const customerConfirmation = {
     from: 'webuybayarea',
-    to: `${req.body.email}, sell@webuybayarea.net`,
+    to: `${req.body.email}`,
     subject: 'Confirmation from WeBuyBayArea',
-    text,
+    customerEmail,
   };
+
+  const agentNotification = {
+    from: 'webuybayarea',
+    to: `matthew.bramfeld@gmail.com`,
+    subject: 'Contact Request',
+    agentEmail,
+  };
+
+
+
+  transporter.sendMail(customerConfirmation, (error) => {
+    if (error) {
+      res.json({ yo: 'error' });
+    } else {
+      res.json({ yo: 'success' });
+    }
+  });
 
   transporter.sendMail(mailOptions, (error) => {
     console.log(req.body.email);
