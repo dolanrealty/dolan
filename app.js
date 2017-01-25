@@ -47,7 +47,7 @@ function handleAgentRequest(req, res) {
 
   const agentNotification = {
     from: 'webuybayarea',
-    to: `sell@webuybayarea.net`,
+    to: `matthew.bramfeld@gmail.com`,
     subject: 'Contact Request',
     text: agentEmail,
   };
@@ -56,7 +56,7 @@ function handleAgentRequest(req, res) {
     if (error) {
       res.json({ yo: 'error' });
     } else {
-      transporter.sendMail(agentNotification, (error) => {});
+      transporter.sendMail(agentNotification);
       res.json({ yo: 'success' });
     }
   });
