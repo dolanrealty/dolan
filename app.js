@@ -62,8 +62,7 @@ function handleAgentRequest(req, res) {
     }
   });
 
-  transporter.sendMail(mailOptions, (error) => {
-    console.log(req.body.email);
+  transporter.sendMail(agentNotification, (error) => {
     if (error) {
       res.json({ yo: 'error' });
     } else {
