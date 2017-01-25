@@ -42,14 +42,14 @@ function handleAgentRequest(req, res) {
     from: 'webuybayarea',
     to: `${req.body.email}`,
     subject: 'Confirmation from WeBuyBayArea',
-    customerEmail,
+    text: customerEmail,
   };
 
   const agentNotification = {
     from: 'webuybayarea',
     to: `matthew.bramfeld@gmail.com`,
     subject: 'Contact Request',
-    agentEmail,
+    text: agentEmail,
   };
 
 
