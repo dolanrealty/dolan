@@ -631,6 +631,12 @@ footer {
   #right-testimonial {
     height: 245px;
   }
+
+  .about-banner {
+    background: url("./aboutImageMobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 650px) {
