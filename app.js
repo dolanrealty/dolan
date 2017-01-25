@@ -52,8 +52,6 @@ function handleAgentRequest(req, res) {
     text: agentEmail,
   };
 
-
-
   transporter.sendMail(customerConfirmation, (error) => {
     if (error) {
       res.json({ yo: 'error' });
