@@ -341,30 +341,30 @@ li {
 }
 
 #no-commission {
-  background: url("./images/NoCommissionsIcon.png") no-repeat;
+  background: url("./NoCommissionsIcon.png") no-repeat;
   background-size: contain;
   margin-top: 28px;
 }
 
 #quick-close {
-  background: url("./images/QuickCloseIcon.png") no-repeat;
+  background: url("./QuickCloseIcon.png") no-repeat;
   background-size: contain;
 }
 
 #we-buy-any {
-  background: url("./images/WeBuyAnyIcon.png") no-repeat;
+  background: url("./WeBuyAnyIcon.png") no-repeat;
   background-size: contain;
   margin-top: 30px;
 }
 
 #no-open-houses {
-  background: url("./images/NoOpenHousesIcon.png") no-repeat;
+  background: url("./NoOpenHousesIcon.png") no-repeat;
   background-size: contain;
   width: 60%;
 }
 
 #cash-in {
-  background: url("./images/ReferralProgramIcon.png") no-repeat;
+  background: url("./ReferralProgramIcon.png") no-repeat;
   background-size: contain;
   height: 20vw;
   width: 65%;
@@ -376,7 +376,7 @@ li {
 }
 
 .about-banner {
-  background: url("./images/AboutTopPicture.jpg");
+  background: url("./AboutTopPicture.jpg");
   background-size: cover;
   height: 400px;
   transform: scaleX(1.1);
@@ -633,8 +633,8 @@ footer {
   }
 
   .about-banner {
-    background: url("./images/aboutImageMobile.jpg");
-    background-size: contain;
+    background: url("./aboutImageMobile.jpg");
+    background-size: contain;;
     background-repeat: no-repeat;
   }
 }

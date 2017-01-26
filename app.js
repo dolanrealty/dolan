@@ -64,7 +64,7 @@ function handleAgentRequest(req, res) {
 
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
-app.use(express.static('public/images'));
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 8080;
