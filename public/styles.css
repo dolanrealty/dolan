@@ -125,8 +125,8 @@ p a, li a {
   }
 
   #modal {
-    width: 45%;
-    left: 33%;
+    width: 54.5%;
+    left: 24%;
   }
 }
 
@@ -135,7 +135,6 @@ p a, li a {
     width: 1164px;
   }
 }
-
 
 .navbar-header {
   background-color: white;
@@ -218,7 +217,7 @@ p a, li a {
 }
 
 input {
-  width: 50.5%;
+  width: 304px;
   padding-left: 2%;
 }
 
@@ -660,5 +659,9 @@ footer {
   .follow {
     width: 87%;
     right: 9%;
+  }
+
+  input {
+    width: 50.5%;
   }
 }
