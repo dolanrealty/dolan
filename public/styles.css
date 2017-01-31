@@ -220,8 +220,13 @@ input {
   padding-left: 2%;
 }
 
+input:invalid:focus {
+  color: black;
+}
+
 input:invalid {
   color: red;
+  font-weight: bold;
 }
 
 .container {
