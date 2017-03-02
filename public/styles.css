@@ -64,6 +64,11 @@ p a, li a {
   font-size: 18px;
 }
 
+.horizon-logo {
+  height: 150%;
+  transform: translateY(-5px);
+}
+
 @media (min-width: 319px) {
   #modal {
     width: 95%;
