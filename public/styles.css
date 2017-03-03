@@ -65,8 +65,8 @@ p a, li a {
 }
 
 .horizon-logo {
-  height: 130%;
-  transform: translateY(-2.5px);
+  height: 120%;
+  transform: translateY(-3px);
 }
 
 @media (min-width: 319px) {
