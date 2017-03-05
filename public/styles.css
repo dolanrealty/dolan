@@ -66,7 +66,7 @@ p a, li a {
 
 .horizon-logo {
   height: 120%;
-  transform: translateY(-3px);
+  transform: translateY(-1px);
 }
 
 @media (min-width: 319px) {
@@ -573,6 +573,7 @@ footer {
 
   #header-links {
     float: right;
+    transform: translateY(1px);
   }
 }
 
@@ -669,6 +670,15 @@ footer {
     width: 95%;
   }
 
+  .banner-blurb {
+    font-weight: 600;
+    font-size: x-large;
+  }
+
+  .banner-top {
+    margin-right: 0;
+  }
+
   .follow {
     width: 87%;
     right: 9%;
@@ -678,4 +688,3 @@ footer {
     width: 50.5%;
   }
 }
-
