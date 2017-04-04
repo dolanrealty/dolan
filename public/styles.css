@@ -670,6 +670,17 @@ footer {
     width: 95%;
   }
 
+  .form-field label {
+    display: none;
+  }
+
+  input {
+    width: 95.5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    outline: 1px solid rgba(51, 51, 51, .25);
+  }
+
   .banner-blurb {
     font-weight: 900;
     font-size: x-large;
@@ -684,7 +695,4 @@ footer {
     right: 9%;
   }
 
-  input {
-    width: 50.5%;
-  }
 }
